@@ -13,7 +13,7 @@ toggle.addEventListener('click', () => {
   try { localStorage.setItem('theme', root.dataset.theme); } catch {}
 });
 document.querySelector('#year').textContent = new Date().getFullYear();
-const links = [...document.querySelectorAll('nav a')];
+const links = [...document.querySelectorAll('.nav-links a')];
 function updateNavigation() {
   const hash = location.hash || '#about';
   links.forEach(link => {
